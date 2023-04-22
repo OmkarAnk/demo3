@@ -11,7 +11,6 @@ node('built-in')
   stage('Build')
   {
     sh 'sudo docker ps'
-    sh 'sudo docker rm -f $(sudo docker ps -aq)'
     sh 'sudo docker images'
     sh 'sudo docker build /home/ubuntu/.jenkins/workspace/assign1 -t web'
     sh 'sudo docker run --name myweb -d -88:80 web'
