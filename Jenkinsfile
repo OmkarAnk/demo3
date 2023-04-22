@@ -6,7 +6,7 @@ node('built-in')
   }
   stage('Build')
   {
-    sh 'echo $(docker ps)'
+    sh 'sudo docker ps'
   }
   
 }
