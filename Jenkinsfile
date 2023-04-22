@@ -6,7 +6,7 @@ node('built-in')
   }
   stage('Build')
   {
-    sh 'sudo docker rm -f $(docker ps -aq)'
+    sh 'sudo docker rm -f $(sudo docker ps -aq)'
   }
   
 }
