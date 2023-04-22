@@ -2,7 +2,7 @@ node('built-in')
 {
   stage('Download')
   {
-    git ''
+    git 'https://github.com/OmkarAnk/demo3.git'
   }
   stage('Build')
   {
