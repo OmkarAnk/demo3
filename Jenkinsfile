@@ -6,7 +6,7 @@ node('built-in')
   }
   stage('list')
   {
-    eho "Workspace: ${env.WORKSPACE}"
+    echo "Workspace: ${env.WORKSPACE}"
   }
   stage('Build')
   {
