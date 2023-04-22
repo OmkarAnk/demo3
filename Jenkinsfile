@@ -7,6 +7,7 @@ node('built-in')
   stage('Build')
   {
     sh 'sudo docker ps'
+    sh 'sudo docker images'
   }
   
 }
