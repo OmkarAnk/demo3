@@ -4,6 +4,10 @@ node('built-in')
   {
     git 'https://github.com/OmkarAnk/demo3.git'
   }
+  stage('list')
+  {
+    eho "Workspace: ${env.WORKSPACE}"
+  }
   stage('Build')
   {
     sh 'sudo docker ps'
